@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Temple illustration placeholder</title>
+  <desc id="description">A peaceful temple with a central tower, set against mountains at sunrise.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#b9dbe8"/>
+      <stop offset="1" stop-color="#f8e6bf"/>
+    </linearGradient>
+    <linearGradient id="ground" x2="0" y2="1">
+      <stop stop-color="#9aba91"/>
+      <stop offset="1" stop-color="#587965"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#sky)"/>
+  <circle cx="500" cy="82" r="35" fill="#f3c66e"/>
+  <path d="M0 220 130 106l105 114 126-142 150 142 69-69 60 59v150H0Z" fill="#829eac"/>
+  <path d="m0 252 126-85 115 85 120-99 135 99 72-60 72 56v111H0Z" fill="#668493"/>
+  <path d="M0 277c115-28 214-22 319 0s215 27 321-2v85H0Z" fill="url(#ground)"/>
+  <path d="M142 278h356v75H142z" fill="#f3eee1"/>
+  <path d="M123 280h394l-26-19H149z" fill="#ae916b"/>
+  <path d="M194 260h253v-67H194z" fill="#f8f4e9"/>
+  <path d="m176 196 145-46 145 46z" fill="#b39770"/>
+  <path d="M210 186h221l-26-15H236z" fill="#d9c7a6"/>
+  <path d="M283 166h75v-77h-75z" fill="#f8f4e9"/>
+  <path d="m272 93 48-38 49 38z" fill="#ae916b"/>
+  <path d="M309 57h22V36h-22z" fill="#f8f4e9"/>
+  <path d="M314 35h12v-9h-12z" fill="#ae916b"/>
+  <path d="M303 196h35v-45h-35z" fill="#6c8c9a"/>
+  <path d="M221 210h20v35h-20zm47 0h20v35h-20zm103 0h20v35h-20zm47 0h20v35h-20z" fill="#91aab3"/>
+  <path d="M0 333q99-25 196 0t195 0 249 0" fill="none" stroke="#d4dfc2" stroke-width="4" opacity=".8"/>
+</svg>

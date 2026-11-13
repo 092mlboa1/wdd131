@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore a collection of temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Musimbi Joel">
+    <title>Temple Album | Musimbi Joel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-title" href="temples.html">Temple Album</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+          <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="primary-navigation" class="primary-nav" aria-label="Temple album filters" hidden>
+          <a href="#album" data-filter="all" aria-current="page">Home</a>
+          <a href="#album" data-filter="old">Old</a>
+          <a href="#album" data-filter="new">New</a>
+          <a href="#album" data-filter="large">Large</a>
+          <a href="#album" data-filter="small">Small</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="album">
+      <h1>Home</h1>
+      <div class="temple-grid">
+        <figure class="temple-card" data-era="old" data-size="large">
+          <img src="images/st_george_utah_temple_exterior.jpeg" alt="Exterior of the St. George Utah Temple" width="640" height="360">
+          <figcaption>St. George Utah Temple</figcaption>
+        </figure>
+        <figure class="temple-card" data-era="old" data-size="large">
+          <img src="images/logan_utah_lds_temple.jpeg" alt="Logan Utah Temple" width="640" height="360" loading="lazy">
+          <figcaption>Logan Utah Temple</figcaption>
+        </figure>
+        <figure class="temple-card" data-era="old" data-size="small">
+          <img src="images/manti-utah-temple-45825-thumb.jpg" alt="Manti Utah Temple" width="640" height="360" loading="lazy">
+          <figcaption>Manti Utah Temple</figcaption>
+        </figure>
+        <figure class="temple-card" data-era="old" data-size="large">
+          <img src="images/salt_lake_temple_renovation_rendering.jpeg" alt="Rendering of the Salt Lake Temple renovation" width="640" height="360" loading="lazy">
+          <figcaption>Salt Lake Temple</figcaption>
+        </figure>
+        <figure class="temple-card" data-era="historic" data-size="small">
+          <img src="images/laie_hawaii_temple_lds.jpeg" alt="Laie Hawaii Temple" width="640" height="360" loading="lazy">
+          <figcaption>Laie Hawaii Temple</figcaption>
+        </figure>
+        <figure class="temple-card" data-era="historic" data-size="small">
+          <img src="images/cardston_alberta_temple_exterior.jpeg" alt="Exterior of the Cardston Alberta Temple" width="640" height="360" loading="lazy">
+          <figcaption>Cardston Alberta Temple</figcaption>
+        </figure>
+        <figure class="temple-card" data-era="historic" data-size="large">
+          <img src="images/Washingtondc.jpg" alt="Washington D.C. Temple" width="640" height="360" loading="lazy">
+          <figcaption>Washington D.C. Temple</figcaption>
+        </figure>
+        <figure class="temple-card" data-era="historic" data-size="small">
+          <img src="images/san-diego-california-temple-72073-thumb.jpg" alt="Illustration placeholder for the San Diego California Temple" width="640" height="360" loading="lazy">
+          <figcaption>San Diego California Temple</figcaption>
+        </figure>
+        <figure class="temple-card" data-era="new" data-size="small">
+          <img src="images/rome-italy-temple-2616-thumb.jpg" alt="Rome Italy Temple" width="640" height="360" loading="lazy">
+          <figcaption>Rome Italy Temple</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="currentyear"></span> Musimbi Joel <span class="footer-divider">•</span> Kampala, Uganda</p>
+      <p id="lastModified"></p>
+      <p id="currentDateTime" aria-live="off"></p>
+    </footer>
+  </body>
+</html>
