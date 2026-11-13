@@ -4,7 +4,7 @@
   --muted: #424242;
   --red: #d20d35;
   --green: #18764d;
-  --paper: rgb(255 255 255 / 88%);
+  --paper: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -84,7 +84,7 @@ main {
   left: 0;
   padding: 0.35rem 1rem;
   color: #fff;
-  background: rgb(18 24 20 / 65%);
+  background: #121814;
   font-size: 0.72rem;
   line-height: 1.4;
   text-align: center;
