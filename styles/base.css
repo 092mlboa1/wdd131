@@ -64,12 +64,12 @@ nav a {
 
 nav a:hover,
 nav a:focus-visible {
-  color: #ffdf73;
+  color: #fff;
   text-decoration: underline;
 }
 
 nav a:focus-visible {
-  outline: 2px solid #ffdf73;
+  outline: 2px solid #fff;
   outline-offset: 3px;
 }
 
@@ -167,7 +167,7 @@ h1 {
 
 .location-mark {
   flex: 0 0 auto;
-  color: #a76e13;
+  color: var(--ink);
   font-size: 1.25rem;
 }
 
@@ -218,11 +218,11 @@ footer p {
 
 .footer-divider {
   margin-inline: 0.35rem;
-  color: #ffdf73;
+  color: #fff;
 }
 
 #lastModified {
-  color: #ffdf73;
+  color: #fff;
   font-size: 0.85rem;
 }
 
