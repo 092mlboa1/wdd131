@@ -1,0 +1,255 @@
+:root {
+  color-scheme: light;
+  --ink: #20232a;
+  --muted: #46505a;
+  --surface: #fff;
+  --page: #f3f4f1;
+  --gold: #f4c542;
+  --red: #c62828;
+  --green: #245c45;
+  --line: #d7d9d5;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  color: var(--ink);
+  background: var(--page);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.site-header {
+  position: relative;
+  z-index: 1;
+  padding: 0.9rem 1rem 1.05rem;
+  color: #fff;
+  background: #20232a;
+  text-align: center;
+}
+
+.site-header::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0.45rem;
+  background: linear-gradient(
+    to bottom,
+    #111 0 33.3%,
+    var(--gold) 33.3% 66.6%,
+    var(--red) 66.6% 100%
+  );
+  content: "";
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 5vw, 2.35rem);
+  font-weight: 750;
+  letter-spacing: 0.015em;
+}
+
+main {
+  flex: 1;
+}
+
+.hero-photo {
+  position: relative;
+  margin: 0;
+  background: #354d46;
+}
+
+.hero-photo picture,
+.hero-photo img {
+  display: block;
+  width: 100%;
+}
+
+.hero-photo img {
+  height: clamp(16rem, 55vh, 39rem);
+  object-fit: cover;
+  object-position: center 54%;
+}
+
+.photo-credit {
+  padding: 0.45rem 0.75rem;
+  color: #fff;
+  background: rgb(20 27 25 / 88%);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.photo-credit a {
+  color: #ffe28a;
+  text-underline-offset: 0.15em;
+}
+
+.photo-credit a:hover,
+.photo-credit a:focus-visible {
+  color: #fff;
+}
+
+.photo-credit a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  width: min(100% - 2rem, 72rem);
+  margin: 1rem auto 1.5rem;
+}
+
+.info-panel {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  background: var(--surface);
+  box-shadow: 0 0.2rem 0.7rem rgb(20 30 25 / 10%);
+}
+
+.info-panel h2 {
+  display: flex;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0.65rem 1rem;
+  color: #fff;
+  background: var(--green);
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.facts-list {
+  margin: 0;
+  padding: 0.7rem 1rem 0.85rem;
+}
+
+.facts-list div {
+  display: grid;
+  grid-template-columns: minmax(6.7rem, 0.85fr) minmax(0, 1.4fr);
+  gap: 0.6rem;
+  padding: 0.48rem 0;
+  border-bottom: 1px solid #e8e9e6;
+}
+
+.facts-list div:last-child {
+  border-bottom: 0;
+}
+
+.facts-list dt {
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.facts-list dd {
+  margin: 0;
+  text-align: right;
+}
+
+.weather-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.site-footer {
+  padding: 0.85rem 1rem 0.7rem;
+  color: #fff;
+  background: #20232a;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0.1rem 0;
+}
+
+.footer-divider {
+  margin-inline: 0.35rem;
+  color: var(--gold);
+}
+
+#lastModified {
+  color: #ffe28a;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 42rem) {
+  .site-header {
+    padding-block: 0.8rem 1.05rem;
+  }
+
+  .hero-photo img {
+    height: min(60vw, 42rem);
+    min-height: 28rem;
+    object-position: center 55%;
+  }
+
+  .photo-credit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .info-grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+    gap: 1.25rem;
+    margin-top: -6.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .info-panel {
+    align-self: start;
+  }
+
+  .info-panel h2 {
+    justify-content: space-between;
+    padding-inline: 1.1rem;
+  }
+
+  .weather-heading::after {
+    content: "⛅";
+    font-size: 1.7rem;
+    line-height: 1;
+  }
+
+  .weather-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 22rem) {
+  .facts-list {
+    padding-inline: 0.7rem;
+  }
+
+  .facts-list div {
+    grid-template-columns: minmax(5.5rem, 0.8fr) minmax(0, 1.2fr);
+    gap: 0.35rem;
+    font-size: 0.92rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

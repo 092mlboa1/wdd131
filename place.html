@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover Kampala, Uganda: its culture, landmarks, and local weather.">
+    <meta name="author" content="Musimbi Joel">
+    <title>Kampala, Uganda | Musimbi Joel</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Kampala, Uganda</h1>
+    </header>
+
+    <main>
+      <figure class="hero-photo">
+        <picture>
+          <source media="(max-width: 42rem)" srcset="images/kampala-mobile.webp" type="image/webp">
+          <img src="images/kampala-wide.webp" alt="Scenery and cultural landmarks around Kampala, Uganda" width="1600" height="900" fetchpriority="high">
+        </picture>
+        <figcaption class="photo-credit">
+          Hero photos:
+          <a href="https://commons.wikimedia.org/wiki/File:Kampala_Kasubi_Tombs.jpg">Kasubi Tombs</a>
+          by not not phil (cropped/resized, CC BY-SA 2.0), and
+          <a href="https://commons.wikimedia.org/wiki/File:Lake_Victoria-_Kampala-Uganda_1.jpg">Lake Victoria</a>
+          by Monica2168 (cropped/resized, CC BY-SA 4.0).
+        </figcaption>
+      </figure>
+
+      <div class="info-grid">
+        <section class="info-panel country-panel" aria-labelledby="country-heading">
+          <h2 id="country-heading">Country Data</h2>
+          <dl class="facts-list">
+            <div><dt>Country</dt><dd>Republic of Uganda</dd></div>
+            <div><dt>Capital</dt><dd>Kampala</dd></div>
+            <div><dt>Population</dt><dd>About 45.9 million</dd></div>
+            <div><dt>Area</dt><dd>241,038 km²</dd></div>
+            <div><dt>Languages</dt><dd>English, Swahili, and Luganda</dd></div>
+            <div><dt>Currency</dt><dd>Ugandan shilling (UGX)</dd></div>
+            <div><dt>Time zone</dt><dd>East Africa Time (UTC+3)</dd></div>
+            <div><dt>Known for</dt><dd>Lake Victoria and rich cultural heritage</dd></div>
+          </dl>
+        </section>
+
+        <section class="info-panel weather-panel" aria-labelledby="weather-heading">
+          <h2 id="weather-heading" class="weather-heading">Weather <img class="weather-icon" src="images/weather-partly-cloudy.svg" alt="" width="44" height="44"></h2>
+          <dl class="facts-list">
+            <div><dt>Conditions</dt><dd>Partly cloudy</dd></div>
+            <div><dt>Temperature</dt><dd><span id="temperature">25</span> °C</dd></div>
+            <div><dt>Wind speed</dt><dd><span id="windSpeed">8</span> km/h</dd></div>
+            <div><dt>Wind chill</dt><dd id="windChill">N/A</dd></div>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="currentyear"></span> Musimbi Joel <span class="footer-divider">•</span> Kampala, Uganda</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
