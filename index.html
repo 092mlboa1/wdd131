@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 – Dynamic Web Fundamentals – Musimbi Joel</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course landing page for Musimbi Joel, featuring a personal introduction, web development interests, and learning resources.">
+    <meta name="author" content="Musimbi Joel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav aria-label="Main navigation">
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="https://byupw.instructure.com/">Canvas</a>
+          <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+          <a href="./final-project/index.html">Final Project</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Musimbi Joel</h1>
+      <div class="cards">
+        <section class="card about-card" aria-labelledby="about-heading">
+          <h2 id="about-heading">About Me</h2>
+          <div class="card-content">
+            <div class="about-copy">
+              <p>Hello! I’m Musimbi Joel. I’m learning how to turn ideas into clear, useful experiences on the web. WDD 131 is where I’m building a strong foundation in HTML, CSS, and JavaScript.</p>
+              <p>I enjoy exploring how thoughtful design and simple code can make a website welcoming and easy for everyone to use. I’m excited to keep learning and share what I create along the way.</p>
+            </div>
+            <img class="about-art" src="images/profile.jpeg" alt="Portrait of Musimbi Joel">
+          </div>
+          <div class="location-note">
+            <span class="location-mark" aria-hidden="true">✦</span>
+            <p><strong>A little about my home</strong><br>My home is an important part of the story I bring to learning and creating.</p>
+          </div>
+        </section>
+
+        <section class="card resources-card" aria-labelledby="resources-heading">
+          <h2 id="resources-heading">Learning the Web</h2>
+          <div class="card-content resources-content">
+            <p>Every new page is a chance to practice, experiment, and make something better. These are a few of the building blocks I’m exploring in WDD 131.</p>
+          </div>
+          <h3>My current toolkit</h3>
+          <ul class="toolkit-list">
+            <li><span>01</span> Semantic HTML</li>
+            <li><span>02</span> Responsive CSS</li>
+            <li><span>03</span> JavaScript fundamentals</li>
+            <li><span>04</span> Accessibility-first design</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> Musimbi Joel <span class="footer-divider">•</span> <span>Kampala, Uganda</span></p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
