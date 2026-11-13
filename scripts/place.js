@@ -1,7 +1,7 @@
 const currentYear = document.getElementById("currentyear");
 const lastModified = document.getElementById("lastModified");
-const temperature = 25;
-const windSpeed = 8;
+const temperature = 10;
+const windSpeed = 5;
 
 function calculateWindChill(temperature, windSpeed) {
   return 13.12 + 0.6215 * temperature - 11.37 * windSpeed ** 0.16 + 0.3965 * temperature * windSpeed ** 0.16;
