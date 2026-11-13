@@ -1,5 +1,11 @@
 const currentYear = document.getElementById("currentyear");
 const lastModified = document.getElementById("lastModified");
 
-currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = `Last modified: ${document.lastModified}`;
+function updateDateTime() {
+  const now = new Date();
+  currentYear.textContent = now.getFullYear();
+  lastModified.textContent = `Current date and time: ${now.toLocaleString()}`;
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
